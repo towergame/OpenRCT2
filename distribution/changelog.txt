@@ -1,4 +1,102 @@
-0.0.4 (not yet released)
+0.0.7 (in development)
+------------------------------------------------------------------------
+- Feature: [#1730] Keyboard shortcuts for track construction.
+- Feature: [#5110] The tile inspector can now be used in multiplayer.
+- Improved: [#5137]: Removing all guests no longer closes the rides and removes the vehicles.
+- Improved: [#5163]: Minor tile inspector improvements and fixes.
+- Fix: [#4689] Object selection tabs sometimes flicker.
+- Fix: [#5150] --openrct-data-path sets user data path instead of OpenRCT2 data path.
+- Fix: [#5188] Clicking on a Magic Carpet doesn't open the ride window.
+- Fix: [#5238] RCT1 import: Rides are initially free when placing them.
+- Fix: [#5299] Scenario editor crash when placing peep spawn
+
+0.0.6 (2017-01-29)
+------------------------------------------------------------------------
+- Feature: [#3355] Allow loading of parks from URLs.
+- Feature: [#4673] Add paint Z clipping.
+- Feature: [#4901] Allow entertainers' costume changes even in absence of required scenery.
+- Feature: [#4916] FreeBSD support.
+- Feature: [#4963] Add boosters (from RCT1 and RCTC).
+- Feature: [#5113] Entertainers are now hired with a random costume.
+- Feature: [#5222] Added Catalan translation.
+- Improved: [#4847] Guest / staff pathfinding.
+- Improved: [#4938] Checksum calculations speeded up.
+- Improved: [#5007] Vehicles and functioning rides are now imported when loading SC4 / SV4 parks.
+- Improved: Guests and staff are now imported when loading SC4 / SV4 parks.
+- Fix: [#4571] Only start autosave timer after update or game command.
+- Fix: [#4584] Junior Coaster diagonal flat-to-steep slopes not drawn.
+- Fix: [#4929] Changing TTF language crashes game.
+- Fix: [#4944] Game crashes upon selecting objects in scenario editor.
+- Fix: [#4951] Scenarios are not recorded as completed from a saved game.
+- Fix: [#4968] Completing a scenario does not save the name that is entered.
+- Fix: [#4996] Objects unloaded after loading landscape.
+- Fix: [#5003] Able to remove entrance/exit of unedittable rides (such as in Volcania).
+- Fix: [#5096] Failure to open parks with out of bounds sprite coordinates.
+- Fix: [#5114] Some entertainer costumes never select-able.
+
+0.0.5 (2016-12-27)
+------------------------------------------------------------------------
+This is the first fully implemented version of OpenRCT2. RCT2.EXE is no longer required.
+
+- Feature: Ability to disable rendering of weather effects and gloom
+- Feature: New view option: "See-Through Paths"
+- Feature: Add cheat to reset date.
+- Feature: Add OpenGL drawing engine.
+- Feature: Implementation of the user-defined currency
+- Feature: Extended tile inspector.
+- Feature: Add ride console command for diagnostics and changing vehicle type.
+- Feature: Allow selecting corners when using the mountain tool.
+- Feature: Allow setting ownership of map edges.
+- Feature: Allow up to 255 cars per train.
+- Feature: Importing SV4 and SC4 files with rides.
+- Feature: Filter Object Selection Window by "Selected only" and "Non-selected only"
+- Feature: Allow raising terrain to 64 in-game units.
+- Feature: Assymmetric-key-based authorisation and assignment storage.
+- Feature: Add Norwegian translation.
+- Feature: Add cheat to disable littering.
+- Feature: Add Cheat to disable plant aging.
+- Feature: Add Cheat that allows any track piece to use a chain lift.
+- Feature: Add Console command to set vehicle friction.
+- Feature: Add console command to set scenario initial cash.
+- Feature: Objects are scanned from the user directory as well as the RCT2 directory.
+- Feature: Objects directory is scanned recursively.
+- Feature: Optionally zoom in towards the cursor rather than the screen centre.
+- Change: The maximum height of Junior Roller Coasters is now 14 units, like it was in RCT1.
+- Improved: Pathfinding algorithm.
+- Improved: Performance and reliability of loading objects.
+- Improved: Screenshots are now saved with the name of the park and the current date and time.
+- Improved: More accurate frame rate calculation
+- Improved: In-game file dialog now shows more formats (sv6, sc6, sv4, etc.)
+- Improved: Joining multiplayer will not redownload custom objects
+- Removed: BMP screenshots.
+- Removed: Intamin and Phoenix easter eggs.
+- Fix: [#933] On-ride photo price sometimes gets reset to £2 when using 'same price in whole park' (original bug).
+- Fix: [#1038] Guest List is out of order.
+- Fix: [#1238] Track place window does not fully adjust to custom colour scheme.
+- Fix: [#2042] Guests entering queues are immediately annoyed when many entertainers are around (original bug).
+- Fix: [#2081] Game hangs when track has infinite loop.
+- Fix: [#2754] Dragging scrollview fails when scaled.
+- Fix: [#3210] Scenery window scrolls too far.
+- Fix: [#3282] Launched Freefall ride ratings are fixed for Downward Launch (original bug).
+- Fix: [#3307] Ride music and sound has degraded since RCT2.
+- Fix: [#3344] Build new ride window can be opened in scenario editor.
+- Fix: [#3347] Ride windows are auto-positioned below the HUD when using RCT1 lights.
+- Fix: [#3352] Assertion triggered while fixing surface tiles.
+- Fix: [#3361] Missing Twister coaster piece.
+- Fix: [#3418] Launched freefall restraints are drawn incorrectly when up (original bug).
+- Fix: [#3451] Renaming staff is a guest command.
+- Fix: [#3635] Inspecting sidewalk path crashes game.
+- Fix: [#3735] Advertisement campaign window bug.
+- Fix: [#3771] Crash when kicking player in multiplayer.
+- Fix: [#3824] Segfault when passing invalid arguments to ride set type.
+- Fix: [#3858] Tooltip shown when hovering over title logo.
+- Fix: [#3915] Restore horizontal and vertical scrollbar behaviour from RCT2 when clicking on one of the scrollbars.
+- Fix: Lay-down Roller Coasters from RCT1 saves are imported with an incorrect vehicle type (not reported).
+- Fix: High lateral G-forces penalty applied too early (not reported).
+- Technical: Multiplayer groups are now stored in JSON format.
+- Technical: MinGW builds dropped support for Windows XP
+
+0.0.4-beta (2016-04-15)
 ------------------------------------------------------------------------
 - Feature: Full native OSX .app support.
 - Feature: Add displaying of frames per second (FPS).
@@ -27,6 +125,10 @@
 - Feature: Weather cheat now allows for more types of weather.
 - Feature: Use fontconfig on Linux and Objective-C APIs on OS X to detect fonts and provide a fallback if necessary.
 - Feature: Ability to automatically open shops after placing them.
+- Feature: Ability to change the default inspection interval for rides.
+- Feature: Ability to disable lightning effect during a thunderstorm.
+- Feature: Ability to set ownership of map edges.
+- Feature: Display a chat hotkey when joining a server.
 - Change: Server IP addresses are no longer shown in the server list.
 - Change: Theme format changed from INI to JSON (INI format no longer supported).
 - Change: Sound controls re-worked to control sound effects and ride music separately.
@@ -35,8 +137,10 @@
 - Technical: lodepng dropped in return for libpng.
 - Technical: SDL2 upgraded from 2.0.3 to 2.0.4.
 - Technical: argparse dropped in return for bespoke command line parsing implementation.
+- Technical: Integrated breakpad for (manual) crash reporting
 - Improve: performance of rendering, particularly for highly populated parks.
 - Improve: performance of loading parks.
+- Improve: support for hacked parks.
 - Removed: Anti-cheat code that detected money hack attempts.
 - Fix: Dated autosave files are not created on OSX and Linux.
 - Fix: Title sequence directories are not deleted when title sequence is deleted on OSX and Linux.
@@ -44,6 +148,7 @@
 - Fix: Various de-synchronisation issues in multiplayer.
 - Fix: Cheats not supported in multiplayer.
 - Fix: [#1333] Rides never become safe again after a crash.
+- Fix: [#1742] Non-ascii characters in scenario details not showing correctly.
 - Fix: [#2126] Ferris Wheels set to "backward rotation" stop working (original bug).
 - Fix: [#2449] Turning off Day/Night Circle while it is night doesn't reset back to day.
 - Fix: [#2477] When opening the built-in load/save dialog, the list is not properly sorted.
@@ -60,13 +165,16 @@
 - Fix: [#2948] New Ride window incorrectly said there were track designs available when in multiplayer mode.
 - Fix: [#2958] Unable to import RCT1 parks in the scenario editor using the load landscape dialog.
 - Fix: [#3015] Walls in SC4/SV4 files are not imported correctly.
+- Fix: [#3063] Search exe directory for SSL bundle as well as CWD.
+- Fix: [#3120] Negative cash in finance window is not red.
+- Fix: [#4134] Can't enable park-wide photo price for log flume and river rapids.
 
 0.0.3.1-beta (2015-12-04)
 ------------------------------------------------------------------------
 - Fix: [#2407] save game prompt delay is not reset on start scenario
 - Fix: [#2415] day / night cycle did not update colours during gameplay
 - Fix: [#2425] new campaign for ride shows invalid list when over 40 rides
-- Fix: [#2417] peep direction assertion somtimes during pathfinding
+- Fix: [#2417] peep direction assertion sometimes during pathfinding
 - Fix: [#2158] video freeze when window is maximised, minimised and then restored
 - Fix: [#2434] dropdown menus linger when toolbars are hidden
 

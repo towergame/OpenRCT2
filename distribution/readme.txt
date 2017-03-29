@@ -1,5 +1,5 @@
-Last updated:    2016-09-01
-Release version: 0.0.4.0-beta
+Last updated:    2017-01-29
+Release version: 0.0.7.0
 ------------------------------------------------------------------------
 
 
@@ -68,9 +68,9 @@ following information in your bug report:
 
 3.0) Supported platforms
 ---- -------------------
-OpenRCT2 is currently supported on Windows XP and above, many distributions of
-Linux and OSX 10.7. OpenRCT2 will only work on x86 architectures as the
-original RollerCoaster Tycoon 2 binary is still required to run the game.
+OpenRCT2 is currently supported on Windows Vista and above, many distributions of
+Linux, macOS, and OS X 10.7 or higher. OpenRCT2 will only work on
+little-endian architectures.
 Further instructions can be found on GitHub.
 
 4.0) Installing and running OpenRCT2
@@ -94,7 +94,11 @@ in the following locations:
   - C:\Program Files (x86)\Infogrames Interactive\RollerCoaster Tycoon 2,
   - C:\Program Files\Atari\RollerCoaster Tycoon 2,
   - C:\Program Files (x86)\Atari\RollerCoaster Tycoon 2,
-  - C:\GOG Games\RollerCoaster Tycoon 2 Triple Thrill Pack
+  - C:\GOG Games\RollerCoaster Tycoon 2 Triple Thrill Pack,
+  - C:\Program Files\GalaxyClient\Games\RollerCoaster Tycoon 2 Triple Thrill Pack,
+  - C:\Program Files (x86)\GalaxyClient\Games\RollerCoaster Tycoon 2 Triple Thrill Pack,
+  - C:\Program Files\Steam\steamapps\common\Rollercoaster Tycoon 2,
+  - C:\Program Files (x86)\Steam\steamapps\common\Rollercoaster Tycoon 2,
   - The location of the openrct2.exe (where OpenRCT2 was extracted/installed)
 
 If none of these locations are found, OpenRCT2 will ask you to manually specify
@@ -149,8 +153,9 @@ to all files in this distribution, except as noted below.
 
 Jansson  | MIT licence.
 libcURL  | MIT (or Modified BSD-style) licence.
-libspeex | BSD-style license.
+libspeex | BSD-style licence.
 libpng   | libpng licence.
+libzip   | BSD 3 clause licence.
 SDL2     | zlib licence.
 SDL2 TTF | zlib licence.
 zlib     | zlib licence.
